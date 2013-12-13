@@ -364,6 +364,7 @@
         }
         // When new files are added, simply append them to the overall list
         var $ = this;
+        input.setAttribute('id','flow-btn-input-id');
         input.addEventListener('change', function (e) {
           $.addFiles(e.target.files, e);
           e.target.value = '';
